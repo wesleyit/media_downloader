@@ -1,0 +1,143 @@
+:root {
+  --bg: #1b1f29;
+  --card: #262c3a;
+  --text: #e8ecf4;
+  --muted: #9aa3b5;
+  --accent: #4f8cff;
+  --border: #394154;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 40px 16px;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.card {
+  width: 100%;
+  max-width: 520px;
+  background: var(--card);
+  border-radius: 14px;
+  padding: 28px 28px 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 19px;
+}
+
+.intro {
+  margin: 0 0 20px;
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+section {
+  margin-bottom: 22px;
+}
+
+.field-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.folder-row {
+  display: flex;
+  align-items: stretch;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.prefix {
+  background: #1f2430;
+  color: var(--muted);
+  padding: 10px 10px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+}
+
+#baseFolder {
+  flex: 1;
+  border: none;
+  background: #1f2430;
+  color: var(--text);
+  padding: 10px 12px;
+  font-size: 13px;
+  outline: none;
+}
+
+.hint {
+  margin: 6px 0 0;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.checkbox-inline {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.types-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.type-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #1f2430;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 13px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 8px;
+}
+
+.primary {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.primary:hover {
+  filter: brightness(1.08);
+}
+
+.saved-msg {
+  color: #6fe09a;
+  font-size: 13px;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Downloader — Configuração</title>
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <div class="card">
+      <h1>Configuração do Media Downloader</h1>
+      <p class="intro">
+        Defina onde salvar as imagens e quais formatos capturar. Os arquivos são
+        salvos dentro da pasta <strong>Downloads</strong> do navegador.
+      </p>
+
+      <section>
+        <label class="field-label" for="baseFolder">Pasta de destino</label>
+        <div class="folder-row">
+          <span class="prefix">Downloads/</span>
+          <input
+            type="text"
+            id="baseFolder"
+            placeholder="MediaDownloader"
+            autocomplete="off"
+          />
+        </div>
+        <p class="hint">Subpasta dentro de Downloads onde as imagens serão salvas.</p>
+      </section>
+
+      <section>
+        <label class="checkbox-inline">
+          <input type="checkbox" id="organizeByDomain" />
+          <span>Organizar em subpastas por site (domínio)</span>
+        </label>
+      </section>
+
+      <section>
+        <span class="field-label">Formatos de imagem</span>
+        <div class="types-grid" id="typesGrid"></div>
+      </section>
+
+      <div class="actions">
+        <button id="save" class="primary" type="button">Salvar configuração</button>
+        <span class="saved-msg" id="savedMsg" hidden>Configuração salva ✓</span>
+      </div>
+    </div>
+
+    <script type="module" src="options.js"></script>
+  </body>
+</html>

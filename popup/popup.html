@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Downloader</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Media Downloader</h1>
+    </header>
+
+    <main>
+      <div class="switch-row">
+        <span class="switch-label">Salvar imagens desta aba</span>
+        <label class="switch">
+          <input type="checkbox" id="toggle" />
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="stats">
+        <span class="count" id="count">0</span>
+        <span class="count-label">imagens salvas nesta aba</span>
+      </div>
+
+      <p class="message" id="message" hidden></p>
+    </main>
+
+    <footer>
+      <button id="settings" class="link-btn" type="button">Configurações</button>
+    </footer>
+
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>
