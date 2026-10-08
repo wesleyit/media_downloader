@@ -89,3 +89,7 @@ Consulte [PLAN.md](PLAN.md) para o plano de arquitetura detalhado.
 
 Fases futuras (ver [PLAN.md](PLAN.md)): internacionalização (pt/en), badge com
 contador no ícone, e suporte a vídeo/áudio.
+
+## Licença
+
+Distribuído sob a licença [MIT](LICENSE).
